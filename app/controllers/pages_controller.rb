@@ -19,6 +19,8 @@ class PagesController < ApplicationController
     n = number.to_i
     answer = rand(1..100)
 
+    p answer
+
     if n == answer
       render json: {message: "Congrats! You got it!"}
     elsif n < answer
