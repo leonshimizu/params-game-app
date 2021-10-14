@@ -31,7 +31,8 @@ class PagesController < ApplicationController
   end
 
   def tester2
-    render json: {message: "hello"}
+    words = params[:url_segment]
+    render json: {message: words}
   end
 
 end
