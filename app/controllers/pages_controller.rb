@@ -15,7 +15,16 @@ class PagesController < ApplicationController
   end
 
   def guess_number
-    render json: {message: "hello"}
+    number = params["number"]
+    n = number.to_i
+
+    if n == 33
+      render json: {message: "Congrats! You got it!"}
+    elsif n < 33
+      render json: {message: "Too low..."}
+    elsif n > 33
+      render json: {message: "Too high..."}
+    end
   end
 
 end
