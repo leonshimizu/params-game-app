@@ -36,7 +36,7 @@ class PagesController < ApplicationController
   end
 
   def numbers_sum
-    n1 = params["number1"].to_i
+    n1 = params[:number1].to_i
     n2 = params["number2"].to_i
     sum = n1 + n2
     render json: {sum: sum}
@@ -54,7 +54,7 @@ class PagesController < ApplicationController
     elsif n > random
       message = "Too high"
     end
-    
+
     render json: {guess: message}
   end 
 
