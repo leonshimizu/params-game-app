@@ -5,6 +5,13 @@ class PagesController < ApplicationController
   end
 
   def first_letter
-    render json: {message: "Hello"}
+    letter = params["name"][0]
+    
+    if letter.downcase == "a"
+      render json: {message: "Hey, your name starts with the first letter of the alphabet!"}
+    else
+      render json: {message: "Your name doesn't start with the first letter of the alphabet..."}
+    end
   end
+  
 end

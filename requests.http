@@ -1,4 +1,4 @@
 GET http://localhost:3000/test.json
 
 ###
-GET http://localhost:3000/name
+GET http://localhost:3000/name?name=Leon
