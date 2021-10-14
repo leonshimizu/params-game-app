@@ -8,3 +8,6 @@ GET http://localhost:3000/number?number=99
 
 ###
 GET http://localhost:3000/test2/any%20words.json
+
+###
+GET http://localhost:3000/sum/5/10.json

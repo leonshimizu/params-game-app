@@ -35,4 +35,11 @@ class PagesController < ApplicationController
     render json: {message: words}
   end
 
+  def numbers_sum
+    n1 = params["number1"].to_i
+    n2 = params["number2"].to_i
+    sum = n1 + n2
+    render json: {sum: sum}
+  end
+
 end
