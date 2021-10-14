@@ -2,3 +2,6 @@ GET http://localhost:3000/test.json
 
 ###
 GET http://localhost:3000/name?name=Leon
+
+###
+GET http://localhost:3000/number

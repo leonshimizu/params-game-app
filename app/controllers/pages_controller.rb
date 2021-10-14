@@ -13,5 +13,9 @@ class PagesController < ApplicationController
       render json: {message: "Your name doesn't start with the first letter of the alphabet..."}
     end
   end
-  
+
+  def guess_number
+    render json: {message: "hello"}
+  end
+
 end

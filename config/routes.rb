@@ -3,4 +3,5 @@ Rails.application.routes.draw do
 
 get "/test" => "pages#tester"
 get "/name" => "pages#first_letter"
+get "/number" => "pages#guess_number"
 end
