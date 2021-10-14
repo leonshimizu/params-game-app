@@ -29,5 +29,5 @@ POST http://localhost:3000/guess3
 content-type: application/json
 
 {
-  "guess": 33
+  "number": 32
 }

@@ -21,11 +21,13 @@ class PagesController < ApplicationController
 
     p answer
 
-    if n == answer
+    test = 33
+
+    if n == test
       render json: {message: "Congrats! You got it!"}
-    elsif n < answer
+    elsif n < test
       render json: {message: "Too low..."}
-    elsif n > answer
+    elsif n > test
       render json: {message: "Too high..."}
     end
   end
@@ -62,23 +64,6 @@ class PagesController < ApplicationController
     render json: {message: "body params"}
   end
 
-  def guesser3
-    n = params[:guess].to_i
-    random = rand(1..100)
-    p random
-
-    test = 33
-
-    if n == test
-      message = "You got it!"
-    elsif n < test
-      message = "Too low"
-    elsif n > test
-      message = "Too high"
-    end
-
-    render json: {guess: message}
-  end
 
 end
 
