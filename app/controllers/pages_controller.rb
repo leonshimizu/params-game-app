@@ -30,4 +30,8 @@ class PagesController < ApplicationController
     end
   end
 
+  def tester2
+    render json: {message: "hello"}
+  end
+
 end

@@ -4,4 +4,5 @@ Rails.application.routes.draw do
 get "/test" => "pages#tester"
 get "/name" => "pages#first_letter"
 get "/number" => "pages#guess_number"
+get "/test2/:url_segment" => "pages#tester2"
 end
