@@ -62,6 +62,24 @@ class PagesController < ApplicationController
     render json: {message: "body params"}
   end
 
+  def guesser3
+    n = params[:guess].to_i
+    random = rand(1..100)
+    p random
+
+    test = 33
+
+    if n == test
+      message = "You got it!"
+    elsif n < test
+      message = "Too low"
+    elsif n > test
+      message = "Too high"
+    end
+
+    render json: {guess: message}
+  end
+
 end
 
 # improvement - delete one guess function and route both routes to the same function

@@ -20,5 +20,14 @@ POST http://localhost:3000/test3
 content-type: application/json
 
 {
-  "information": "stuff"
+  "information": "stuff",
+  "password": "stuff"
+}
+
+###
+POST http://localhost:3000/guess3
+content-type: application/json
+
+{
+  "guess": 33
 }

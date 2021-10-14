@@ -8,4 +8,5 @@ get "/test2/:url_segment" => "pages#tester2"
 get "/sum/:number1/:number2" => "pages#numbers_sum"
 get "/guesser/:guess" => "pages#guess"
 post "/test3" => "pages#tester3"
+post "/guess3" => "pages#guesser3"
 end
