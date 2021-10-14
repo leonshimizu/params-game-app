@@ -46,15 +46,15 @@ class PagesController < ApplicationController
     n = params[:guess].to_i
     random = rand(1..100)
     p random
-    test = 33
 
-    if n == 33
+    if n == random
       message = "You got it!"
-    elsif n < 33
+    elsif n < random
       message = "Too low"
-    elsif n > 33
+    elsif n > random
       message = "Too high"
     end
+    
     render json: {guess: message}
   end 
 
