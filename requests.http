@@ -31,3 +31,12 @@ content-type: application/json
 {
   "number": 32
 }
+
+###
+POST http://localhost:3000/login
+content-type: application/json
+
+{
+  "login": "hugh",
+  "password": "swordfish"
+}

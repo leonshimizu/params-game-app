@@ -17,4 +17,6 @@ post "/test3" => "pages#tester3"
 
 post "/guess3" => "pages#guess_number"
 
+post "/login" => "pages#valid"
+
 end

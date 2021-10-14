@@ -48,5 +48,17 @@ class PagesController < ApplicationController
     render json: {message: "body params"}
   end
 
+  def valid
+    login = params["login"].downcase
+    password = params["password"].downcase
 
+    if login == "hugh" && password == "swordfish"
+      message = "Valid credentials."
+    else
+      message = "Invalid credentials."
+    end
+    
+    render json: {message: message}
+  end
+  
 end
