@@ -58,6 +58,10 @@ class PagesController < ApplicationController
     render json: {guess: message}
   end 
 
+  def tester3
+    render json: {message: "body params"}
+  end
+
 end
 
 # improvement - delete one guess function and route both routes to the same function
