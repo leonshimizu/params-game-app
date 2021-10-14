@@ -42,4 +42,20 @@ class PagesController < ApplicationController
     render json: {sum: sum}
   end
 
+  def guess
+    n = params[:guess].to_i
+    random = rand(1..100)
+    p random
+    test = 33
+
+    if n == 33
+      message = "You got it!"
+    elsif n < 33
+      message = "Too low"
+    elsif n > 33
+      message = "Too high"
+    end
+    render json: {guess: message}
+  end 
+
 end
